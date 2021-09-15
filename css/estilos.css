@@ -66,6 +66,12 @@ h2 {
   text-align: center;
   padding: 20px;
 }
+table{
+  font-family: "Rubik", sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #9bf6ff;
+}
 
 footer {
   background-color: #18a1d8;
@@ -166,5 +172,28 @@ ul {
 }
 .rrss ul li .twitter:hover {
   background: var(--twitter);
+}
+
+.fancy {
+  height: 80vh;
+  margin-top: 10px;
+  background-attachment: fixed;
+  background-position: center center;
+  
+}
+
+.wrapper {
+  width: 100%;
+  margin: auto 3%;
+}
+
+.wrapper a img {
+  width: 100%;
+}
+
+.wrapper a {
+  width: 30%;
+  float: left;
+  margin: 5px;
 }
 
