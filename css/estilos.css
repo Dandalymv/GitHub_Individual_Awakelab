@@ -2,7 +2,7 @@
   font-family: "Rubik", sans-serif;
 }
 body{
-  background-color: #e11d8c;
+    background: linear-gradient(#e11d8c, #e11d8c, #9191f2);
 }
 
 :root {
@@ -11,12 +11,16 @@ body{
   --youtube: #bd081c;
   --twitter: #55acee;
 }
+nav {
+  display: flex;
+  justify-content: center;
+}
 
 .menuNav {
   margin: .07%;
   background-color: #31dcee;
   text-align: center;
-  padding: 10px;
+  padding:10px;
   font-size: 20px;
   border-radius: 10px;
   border-radius: 10px 10px 0px 0px
@@ -27,13 +31,10 @@ body{
 }
 
 
-nav {
-  display: flex;
-  justify-content: center;
-}
 
-a:link,
-a:visited {
+
+.navegacion:link,
+.navegacion:visited {
   color: #113976;
   margin: 1px;
   padding: 9px;
@@ -41,13 +42,23 @@ a:visited {
   width: 100%;
   text-decoration: none;
 }
-a:hover {
+.navegacion:hover {
   background-color: #9bf6ff;
   border-radius: 10px;
 }
-a:active {
+.navegacion:active {
   background-color: dodgerblue;
 }
+
+
+
+.wrapper a img:hover{
+  transform: translateY(-3px) scale(1.10);
+  box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.4);
+  
+  
+}
+
 
 h1 {
   background-color: #18a1d8;
@@ -126,17 +137,20 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: auto;
+  margin: 50%;
+  
 }
 
 ul {
   padding: 0;
 }
 
+
 .rrss ul li {
   display: inline-block;
-  margin: 10px;
-  width: 40px;
+  margin: 5px 10px;
+  
+  width: 100%;
   text-align: center;
 }
 
@@ -146,9 +160,11 @@ ul {
   background-color: #333;
   color: white;
   line-height: 50px;
+  width: 50px;
   font-size: 18px;
   box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.2);
   transition: 0.2s;
+  border-radius: 5px;
 }
 
 .rrss ul:hover a {
@@ -197,3 +213,49 @@ ul {
   margin: 5px;
 }
 
+
+.menu {
+  width: 30px;
+  height: 52px;
+  background: #2EE3AD;
+  border-radius: 0 0.5rem 0.5rem 0;
+  position: fixed;
+  top: 40%;
+  font-family: sans-serif;
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  transition: left 0.7s;
+  margin-top: 28px; 
+}
+
+.checkbox:checked ~ .menu {
+  left: 70px;
+  border-radius: 0 0.5rem 0.5rem 0;
+  margin-top: 28px; 
+}
+
+.left-panel {
+  width: 70px;
+  height: 100%;
+  background: linear-gradient(#54BBC7, #2EE3AD, #9191f2);
+  position: fixed;
+  top: 0;
+  left: -40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: left 0.4s;
+  
+  
+  
+}
+
+.checkbox:checked ~ .left-panel {
+  left: 0;  
+  
+}
+
+.checkbox {
+  display: none;
+}

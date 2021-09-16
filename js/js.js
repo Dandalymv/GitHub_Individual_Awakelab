@@ -1,4 +1,9 @@
-alert("¡Hola..., Bienvenido a mi sitio WEB...!");
+// alert("¡Hola..., Bienvenido a mi sitio WEB...!");
+Swal.fire({
+    text: "Bienvenido a mi sitio Web!",
+})
+
+
 
 function generarNuevoColor(){
 	var simbolos, color;
